@@ -56,8 +56,7 @@ const Packages = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl font-bold text-gray-900"
           >
@@ -65,8 +64,7 @@ const Packages = () => {
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-4 text-gray-600"
           >
@@ -79,13 +77,12 @@ const Packages = () => {
             <motion.div
               key={pkg.id}
               initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
               whileHover={{ y: -15 }}
-              className={`rounded-2xl p-8 shadow-lg relative overflow-hidden ${
+              className={`flex flex-col rounded-2xl p-8 shadow-lg relative overflow-hidden ${
                 pkg.popular
-                  ? "bg-gradient-to-br from-orange-500 to-orange-600 text-white transform md:-translate-y-4"
+                  ? "bg-gradient-to-br from-orange-500 to-orange-600 text-white transform"
                   : "bg-white"
               }`}
             >
@@ -122,7 +119,7 @@ const Packages = () => {
                 )}
               </div>
 
-              <ul className="mb-8 space-y-3">
+              <ul className="mb-8 space-y-3 flex-grow">
                 {pkg.features.map((feature, idx) => (
                   <li
                     key={idx}

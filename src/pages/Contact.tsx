@@ -13,8 +13,7 @@ const Contact = () => {
           <div className="text-center mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="text-3xl md:text-4xl font-bold text-gray-900"
             >
@@ -22,8 +21,7 @@ const Contact = () => {
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="mt-4 text-gray-600"
             >
@@ -34,8 +32,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
@@ -43,55 +40,49 @@ const Contact = () => {
               </h3>
 
               <div className="space-y-6">
-                <div className="flex items-start">
+                <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-500 mr-4">
                     <Mail />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Email</h4>
+                    {/* <h4 className="font-semibold text-gray-900">Email</h4> */}
                     <p className="text-gray-600">info@t2solutions.com.my</p>
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-500 mr-4">
                     <Phone />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">+60 3-1234 5678</p>
+                    {/* <h4 className="font-semibold text-gray-900">Phone</h4> */}
+                    <p className="text-gray-600">+60 1-2345 6789</p>
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                <div className="flex items-center">
                   <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center text-orange-500 mr-4">
                     <MapPin />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900">Office</h4>
                     <p className="text-gray-600">
-                      Level 15, Menara Maxis
-                      <br />
-                      Kuala Lumpur City Centre
-                      <br />
-                      50088 Kuala Lumpur, Malaysia
+                      T2-18-12, The Place@Cyberjaya, Sepang, Selangor
                     </p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-10">
-                <Button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full flex items-center">
-                  <Phone className="mr-2" />
-                  WhatsApp Us
+                <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full flex items-center hover:cursor-pointer">
+                  <Phone />
+                  <p>WhatsApp Us</p>
                 </Button>
               </div>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               className="bg-white rounded-2xl shadow-lg p-8"
             >
@@ -140,7 +131,7 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-semibold"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg font-semibold hover:cursor-pointer"
                 >
                   Send Message
                 </Button>

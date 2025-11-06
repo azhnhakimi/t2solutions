@@ -1,21 +1,9 @@
 import { motion } from "framer-motion";
 import heroVideo from "@/assets/videos/hero-section.mp4";
-import { useLayoutEffect, useRef, useState } from "react";
 
 const HeroSection = () => {
-  const [headerHeight, setHeaderHeight] = useState(0);
-  const headerRef = useRef(document.querySelector("header"));
-
-  useLayoutEffect(() => {
-    if (headerRef.current) {
-      setHeaderHeight(headerRef.current.offsetHeight);
-    }
-  }, []);
   return (
-    <section
-      className="relative h-screen flex justify-center items-center overflow-hidden -mt-[var(--header-height)]"
-      style={{ "--header-height": `${headerHeight}px` } as React.CSSProperties}
-    >
+    <section className="relative h-[calc(100vh-var(--header-height))] flex justify-center items-center overflow-hidden">
       <video
         autoPlay
         loop

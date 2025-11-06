@@ -48,7 +48,10 @@ export default function Layout({ children }: LayoutProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div
+      className="min-h-screen bg-white flex flex-col"
+      style={{ "--header-height": `${headerHeight}px` } as React.CSSProperties}
+    >
       <header
         ref={headerRef}
         className="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm"
