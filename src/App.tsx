@@ -7,11 +7,13 @@ import Packages from "./pages/Packages";
 import Contact from "./pages/Contact";
 import Layout from "./components/Layout";
 import ScrollToTop from "./components/ScrollToTop";
+import DynamicTitle from "./components/DynamicTitle";
 
 function App() {
   return (
     <>
       <ScrollToTop />
+      <DynamicTitle />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
