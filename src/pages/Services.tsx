@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
   Calendar,
@@ -134,12 +133,6 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                {/* <Button
-                  variant="outline"
-                  className="text-orange-500 border-orange-500 hover:bg-orange-50"
-                >
-                  Learn More
-                </Button> */}
               </motion.div>
             );
           })}

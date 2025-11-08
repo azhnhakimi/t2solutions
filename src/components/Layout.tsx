@@ -3,7 +3,6 @@
 import { useState, useRef, useLayoutEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import {
-  Shield,
   Menu,
   X,
   Mail,
