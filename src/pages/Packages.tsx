@@ -5,12 +5,11 @@ const packages = [
   {
     id: 1,
     name: "Starter",
-    price: "RM 299",
+    price: "RM 499",
     period: "/month",
     features: [
-      "Smart Call & Messaging Automation (SMS follow-up only)",
+      "Smart Call & Messaging Automation (WhatsApp + SMS)",
       "Basic Website Development & Integration",
-      "Google Business Profile Setup",
       "3-Month Maintenance & Support",
       "Monthly Performance Report",
       "Business Hours Support",
@@ -20,7 +19,7 @@ const packages = [
   {
     id: 2,
     name: "Professional",
-    price: "RM 599",
+    price: "RM 799",
     period: "/month",
     features: [
       "Smart Call & Messaging Automation (WhatsApp + SMS)",
@@ -44,7 +43,6 @@ const packages = [
       "Advanced Online Booking System (Multi-Branch)",
       "Fully Custom Website with Integrations",
       "12-Month Priority Maintenance & Support",
-      "Dedicated Account Manager",
       "Daily Analytics & Insights",
       "AI Workflow Integration",
       "SLA Guarantee",
@@ -128,12 +126,12 @@ const Packages = () => {
                 {pkg.features.map((feature, idx) => (
                   <li
                     key={idx}
-                    className={`flex items-center ${
+                    className={`flex items-center text-left ${
                       pkg.popular ? "text-orange-100" : "text-gray-600"
                     }`}
                   >
                     <div
-                      className={`w-5 h-5 rounded-full border mr-3 flex items-center justify-center ${
+                      className={`w-5 h-5 rounded-full border mr-3 flex items-center justify-center shrink-0 ${
                         pkg.popular ? "border-white" : "border-orange-500"
                       }`}
                     >
