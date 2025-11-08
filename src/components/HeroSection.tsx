@@ -3,17 +3,22 @@ import heroVideo from "@/assets/videos/hero-section.mp4";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[calc(100vh-var(--header-height))] flex justify-center items-center overflow-hidden">
-      <video
+    <section className="relative h-[calc(100vh-var(--header-height))] flex justify-center items-center overflow-hidden bg-gradient-to-b from-gray-900 to-black">
+      <motion.video
         autoPlay
         loop
         muted
         playsInline
+        preload="auto"
+        poster="/hero-poster.png"
         className="absolute z-0 w-full h-full object-cover"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         <source src={heroVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      </motion.video>
+
       <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
 
       <div className="container mx-auto px-4 relative z-10 text-center">

@@ -63,8 +63,8 @@ export default function Layout({ children }: LayoutProps) {
             transition={{ duration: 0.5 }}
             className="flex items-center"
           >
-            <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center mr-3">
-              <Shield className="text-white" />
+            <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center mr-3 overflow-hidden">
+              <img src="t2solutions-logo.jpg" alt="T2Solutions Logo" />
             </div>
             <span className="text-2xl font-bold text-orange-500">
               T2Solutions
@@ -140,8 +140,8 @@ export default function Layout({ children }: LayoutProps) {
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
               <div className="flex items-start mb-3">
-                <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center mr-3">
-                  <Shield className="text-white" />
+                <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center mr-3 overflow-hidden">
+                  <img src="t2solutions-logo.jpg" alt="T2Solutions Logo" />
                 </div>
                 <span className="text-2xl font-bold text-orange-500">
                   T2Solutions

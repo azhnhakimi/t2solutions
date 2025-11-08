@@ -1,125 +1,88 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
-  BarChart,
   Calendar,
-  Globe,
-  MessageCircle,
-  Settings,
-  Shield,
-  ShoppingCart,
-  Zap,
+  Columns3Cog,
+  Monitor,
+  Construction,
+  Phone,
 } from "lucide-react";
 
 const services = [
   {
     id: 1,
-    title: "Digital Presence",
+    title: "Smart Call & Messaging Automation",
     description:
-      "Help local businesses establish a professional online identity and make it easier for customers to reach them.",
-    icon: "Globe",
+      "Stay connected even when you miss a call with instant automated replies and scheduling options.",
+    icon: "Phone",
     details: [
-      "Website Design & Development",
-      "Google Business Profile Setup",
-      "Online Booking Pages",
+      "Sends personalized SMS or WhatsApp messages for missed calls.",
+      "Lets customers schedule callbacks or consultations easily.",
+      "Integrates with CRM or booking tools to track responses",
+      "Boosts customer engagement and reduces lost leads",
     ],
   },
   {
     id: 2,
-    title: "Customer Engagement & Automation",
+    title: "Online Booking & Scheduling Systems",
     description:
-      "Modernize how businesses communicate with customers and handle inquiries automatically.",
-    icon: "MessageCircle",
+      "Streamline appointments with easy online booking, reminders, and admin control.",
+    icon: "Calendar",
     details: [
-      "WhatsApp & SMS Automation System",
-      "Chatbot Integration",
-      "Newsletter & Broadcast Messaging",
+      "Custom booking portals for services or consultations",
+      "Automated reminders and confirmations for clients",
+      "Centralized dashboard to manage schedules",
+      "Optional to sync with Google Calendar",
     ],
   },
   {
     id: 3,
-    title: "Booking & Scheduling Systems",
+    title: "Custom Business Applications",
     description:
-      "Simplify appointment and service scheduling for both customers and business owners.",
-    icon: "Calendar",
+      "Optimize your operations with software built specifically for your business.",
+    icon: "Columns3Cog",
     details: [
-      "Online Appointment Booking System",
-      "Calendar Integration",
-      "Payment Integration",
+      "Tailor-made solutions for inventory, orders, or staff management",
+      "Streamlines workflows and daily operations",
+      "Includes analytics dashboards for better insights",
+      "Scalable and secure for future growth",
     ],
   },
   {
     id: 4,
-    title: "Business Tools & Internal Systems",
+    title: "Website Development & Integration",
     description:
-      "Digitize and streamline everyday business operations to improve efficiency.",
-    icon: "Tool",
+      "Build a modern, responsive website that drives customers and integrates key tools.",
+    icon: "Monitor",
     details: [
-      "Inventory Management System",
-      "Sales & Invoice System",
-      "Custom Business Applications",
+      "Fast, SEO-friendly websites tailored to your brand",
+      "Built using secure, modern frameworks",
+      "Integration with booking forms, WhatsApp, and Google Maps",
+      "Custom designs that fit your business identity",
     ],
   },
   {
     id: 5,
-    title: "E-Commerce & Online Payment Solutions",
+    title: "Maintenance & Support",
     description:
-      "Help businesses sell products and services online easily and securely.",
-    icon: "ShoppingCart",
+      "Keep your systems running smoothly with reliable updates and technical care.",
+    icon: "Construction",
     details: [
-      "E-Commerce Website Setup",
-      "Online Menu Ordering System",
-      "Payment Gateway Integration",
-    ],
-  },
-  {
-    id: 6,
-    title: "Analytics & Business Insights",
-    description:
-      "Turn data into actionable insights for smarter decision-making.",
-    icon: "BarChart",
-    details: [
-      "Website Analytics Dashboard",
-      "Customer Insights Dashboard",
-      "Ad & Campaign Reporting",
-    ],
-  },
-  {
-    id: 7,
-    title: "Maintenance & Retainer Plans",
-    description:
-      "Ensure continuous support and reliability while generating recurring income.",
-    icon: "Settings",
-    details: [
-      "Website Hosting & Maintenance",
-      "Monthly Analytics Reports",
-      "Software Support & Bug Fixes",
-    ],
-  },
-  {
-    id: 8,
-    title: "Smart Automation Solutions",
-    description:
-      "Innovative automation solutions beyond the basics for efficiency and growth.",
-    icon: "Zap",
-    details: [
-      "Missed Call Auto-Response System",
-      "Custom Workflow Automation",
-      "AI Chat Assistant Integration",
+      "Regular updates and bug fixes.",
+      "Fast response to technical issues",
+      "Continuous performance and security monitoring",
+      "Flexible support plans based on your needs",
     ],
   },
 ];
 
 const Services = () => {
   const iconMap: Record<string, React.FC<React.SVGProps<SVGSVGElement>>> = {
-    Globe,
-    MessageCircle,
+    Phone,
     Calendar,
-    Shield,
-    ShoppingCart,
-    BarChart,
-    Settings,
-    Zap,
+    Columns3Cog,
+    Monitor,
+    Construction,
   };
 
   return (
@@ -171,12 +134,12 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Button
+                {/* <Button
                   variant="outline"
                   className="text-orange-500 border-orange-500 hover:bg-orange-50"
                 >
                   Learn More
-                </Button>
+                </Button> */}
               </motion.div>
             );
           })}
